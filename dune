@@ -1,0 +1,2 @@
+; ocaml_openapi_generator depends on jingoo which is not in the opam switch
+(dirs ())
