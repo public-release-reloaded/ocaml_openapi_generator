@@ -43,7 +43,7 @@ module Source = struct
 2. Rebuild to regenerate the library. Make sure you accept any dune file correction first.|}]
   ;;
 
-  let next_steps_extra (_ : t) = ()
+  let next_steps_extra (_ : t) = () [@@warning "-32"]
 end
 
 let validate_library_name name =
@@ -120,7 +120,7 @@ let command =
          (* Create destination directory *)
          let%bind () = Unix.mkdir ~p:() destination |> Deferred.ok in
          (* Set up schema source and get spec path *)
-         let%bind spec_file = Source.setup source |> Deferred.ok in
+         let%bind spec_file = Source.setup ~source |> Deferred.ok in
          (* Create README *)
          let%bind () = create_readme ~destination ~name ~source |> Deferred.ok in
          (* Create initial jbuild using make_jbuild with empty paths *)

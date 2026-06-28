@@ -1,5 +1,5 @@
 (executables
- (modes byte exe)
+ (modes exe)
  (names openapi)
  (public_names ocaml-openapi-generator)
  (libraries async async_interactive core_unix.command_unix core file_path
