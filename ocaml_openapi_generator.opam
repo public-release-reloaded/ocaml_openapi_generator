@@ -12,23 +12,23 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.5.0"}
-  "async"
-  "async_interactive"
-  "base"
-  "capitalization"
-  "core"
-  "core_kernel"
-  "core_unix"
-  "file_path"
-  "jsonaf"
-  "ocaml-embed-file"
-  "ppx_derive_at_runtime"
-  "ppx_jane"
-  "ppx_jsonaf_conv"
-  "roundtrippable_command_param"
-  "dune"                         {>= "3.17.0"}
-  "httpaf"                       {>= "0.7.1"}
-  "jingoo"                       {>= "1.4.4" & < "1.5.0"}
+  "async" {>= "v0.18~" & < "v0.19~"}
+  "async_interactive" {>= "v0.18~" & < "v0.19~"}
+  "base" {>= "v0.18~" & < "v0.19~"}
+  "capitalization" {>= "v0.18~" & < "v0.19~"}
+  "core" {>= "v0.18~" & < "v0.19~"}
+  "core_kernel" {>= "v0.18~" & < "v0.19~"}
+  "core_unix" {>= "v0.18~" & < "v0.19~"}
+  "file_path" {>= "v0.18~" & < "v0.19~"}
+  "jsonaf" {>= "v0.18~" & < "v0.19~"}
+  "ocaml-embed-file" {>= "v0.18~" & < "v0.19~"}
+  "ppx_derive_at_runtime" {>= "v0.18~" & < "v0.19~"}
+  "ppx_jane" {>= "v0.18~" & < "v0.19~"}
+  "ppx_jsonaf_conv" {>= "v0.18~" & < "v0.19~"}
+  "roundtrippable_command_param" {>= "v0.18~" & < "v0.19~"}
+  "dune" {>= "3.17.0"}
+  "httpaf" {>= "0.7.1"}
+  "jingoo" {>= "1.4.4" & < "1.5.0"}
   "uri" {>= "4.4.0"}
 ]
 available: arch != "x86_32"
